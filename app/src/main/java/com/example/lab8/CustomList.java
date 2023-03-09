@@ -79,6 +79,14 @@ public class CustomList extends ArrayAdapter<City> {
         }
     }
 
+    /**
+     *
+     * @param city
+     * @throws IllegalAccessException
+     */
+    public void deleteCity(City city) throws IllegalAccessException {
+
+    }
 
 
 

@@ -45,4 +45,14 @@ public class CustomListTest {
         assertEquals(false,list.hasCity(city1));
     }
 
+    @Test
+    void testDeleteCity() throws IllegalAccessException {
+        list = MockCityList();
+        City city = new City("Regina", "Saskatchewan");
+        list.addCity(city);
+        assertEquals(2, list.getCities().size());
+        list.deleteCity(city);
+        assertEquals(1, list.getCities().size());
+    }
+
 }
