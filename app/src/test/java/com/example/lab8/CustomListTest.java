@@ -39,7 +39,7 @@ public class CustomListTest {
     void testHasCity() throws IllegalAccessException {
         list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
-        list.add(city);
+        list.addCity(city);
         assertEquals(true,list.hasCity(city));
         City city1 = new City("toronto", "Ontario");
         assertEquals(false,list.hasCity(city1));
