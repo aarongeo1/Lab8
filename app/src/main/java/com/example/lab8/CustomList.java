@@ -85,7 +85,11 @@ public class CustomList extends ArrayAdapter<City> {
      * @throws IllegalAccessException
      */
     public void deleteCity(City city) throws IllegalAccessException {
-
+        if (cities.contains(city)){
+            cities.remove(city);
+        } else {
+            throw new IllegalAccessException();
+        }
     }
 
 
