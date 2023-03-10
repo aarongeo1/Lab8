@@ -91,6 +91,13 @@ public class CustomList extends ArrayAdapter<City> {
             throw new IllegalAccessException();
         }
     }
+    /**
+     *
+     * @return
+     */
+    public int countCities() {
+        return cities.size();
+    }
 
 
 
