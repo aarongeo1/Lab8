@@ -59,7 +59,7 @@ public class CustomListTest {
     void testCountCities() throws IllegalAccessException {
         list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
-        list.add(city);
+        list.addCity(city);
         assertEquals(1, list.countCities());
     }
 
